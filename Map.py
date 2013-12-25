@@ -20,12 +20,12 @@ def getFileName():
 
 
 def main(separator='\t'):
-    # input comes from STDIN (standard input)
+    # input comes from standard input
     data = read_input(sys.stdin)
     try:
         for words in data:
-        # write the results to STDOUT (standard output);
-        # tab-delimited; the trivial word count is 1
+        # write the results to standard output
+        # tab-delimited
         # Before printing I remove some useless characters
             for word in words:
                 word = filter(lambda x: x not in "\n|~()!;.,-\'\#_\"{}[]*$@%^&",word)                          
